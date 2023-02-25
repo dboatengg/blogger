@@ -1,6 +1,6 @@
 # Blogger
 
-Blogger is a simple blog app where users can create posts, view and delete them.
+Blogger is a user-friendly web application that allows users to view blog posts without authentication. On the other hand, authenticated users have access to additional features such as creating, viewing, and deleting posts. 
 
 ## Usage
 

@@ -2,13 +2,6 @@
 
 Blogger is a simple blog app where users can create posts, view and delete them.
 
-## Installation
-
-1.  Clone the repository: `git clone https://github.com/dboatengg/react-blog-app.git`
-2.  Install dependencies: `npm install`
-3.  Create a Firebase project and add the configuration details to `src/firebase.js`
-4.  Start the app: `npm start`
-
 ## Usage
 
 The app has the following pages:
@@ -26,6 +19,13 @@ The app has the following pages:
 - React-router
 - Firebase
 
+## Installation
+
+1.  Clone the repository: `git clone https://github.com/dboatengg/blogger.git`
+2.  Install dependencies: `npm install`
+3.  Create a Firebase project and add the configuration details to `src/firebase.js`
+4.  Start the app: `npm run dev`
+
 ## Contributing
 
 Feel free to submit a pull request if you find a bug or want to improve the app.
@@ -38,4 +38,4 @@ Feel free to submit a pull request if you find a bug or want to improve the app.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

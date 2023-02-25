@@ -19,18 +19,22 @@ The app has the following pages:
 - **Display Post:** displays the full content of a post when a user clicks on the title of a post in the blog section
 - **Login:** allows users to log in using their Google account
 
-## Dependencies
+## Built With
 
-The app uses the following dependencies:
-
-- `react`
-- `react-dom`
-- `react-router-dom`
-- `firebase`
+- JavaScript
+- React
+- React-router
+- Firebase
 
 ## Contributing
 
 Feel free to submit a pull request if you find a bug or want to improve the app.
+
+## Author
+
+- GitHub: [dboateng](https://www.github.com/dboatengg)
+- Twitter: [alege_dev](https://www.twitter.com/alege_dev)
+- Instagram: [alege_dev](https://www.instagram.com/alege_dev)
 
 ## License
 

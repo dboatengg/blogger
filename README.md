@@ -6,11 +6,11 @@ Blogger is a simple blog app where users can create posts, view and delete them.
 
 The app has the following pages:
 
-- **Home:** the landing page, displays a welcome message and some information about the app
-- **Create Post:** allows authenticated users to create new posts
-- **Blog:** displays a list of all posts, allows authenticated users to delete their own posts
-- **Display Post:** displays the full content of a post when a user clicks on the title of a post in the blog section
-- **Login:** allows users to log in using their Google account
+- **Home:** Represents the landing page. It displays a welcome message and some information about the app.
+- **Create Post:** Allows authenticated users to create new posts
+- **Blog:** Displays a list of all posts, allows authenticated users to delete their own posts
+- **Display Post:** Displays the full content of a post when a user clicks on the title of a post on the Blog page.
+- **Login:** Allows users to log in using their Google account
 
 ## Built With
 

@@ -39,10 +39,7 @@ const Blog = ({ isAuth }) => {
           return (
             <div className={style.post} key={post.id}>
               <div className={style.postHeader}>
-                <Link
-                  to={`/displaypost/${post.id}`}
-                  className={style.postTitle}
-                >
+                <Link to="/displaypost" className={style.postTitle}>
                   {post.title}
                 </Link>
                 {isAuth && post.author.id === auth.currentUser.uid && (

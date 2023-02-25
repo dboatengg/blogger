@@ -1,13 +1,9 @@
-import { useLocation } from "react-router-dom";
-
 const DisplayPost = () => {
-  const location = useLocation();
-  const { title, post } = location.state;
-
   return (
     <div>
-      <h1>{title}</h1>
-      <p>{post}</p>
+      <h2>full post will appear here (still working on it)</h2>
     </div>
   );
 };
+
+export default DisplayPost;

@@ -6,7 +6,8 @@ import Login from "./pages/Login";
 import CreatePost from "./pages/CreatePost";
 import Navbar from "./components/Navbar";
 import Blog from "./pages/Blog";
-import DisplayPost from "./pages/DisplayPost";
+import SinglePost from "./pages/SinglePost";
+import "./tailwind.css";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="blog" element={<Blog isAuth={isAuth} />} />
-        <Route path="/displaypost" element={<DisplayPost />} />
+        <Route path="/posts/:postId" element={<SinglePost />} />
         <Route path="login" element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
     </Router>

@@ -5,7 +5,7 @@ Blogger is a web application that allows users to view blog posts without authen
 
 ## Usage
 
-The app has the following pages:
+The application has the following pages:
 
 - **Home:** Represents the landing page. It displays a welcome message and some information about the app.
 - **Create Post:** Allows authenticated users to create new posts

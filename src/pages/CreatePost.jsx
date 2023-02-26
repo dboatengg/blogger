@@ -55,7 +55,7 @@ const CreatePost = ({ isAuth }) => {
               />
             </label>
             <label htmlFor="post">
-              <p>Title</p>
+              <p>Post</p>
               <textarea
                 name="post"
                 placeholder="Post..."

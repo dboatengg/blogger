@@ -1,6 +1,7 @@
 # Blogger
 
-Blogger is a web application that allows users to view blog posts without authentication. On the other hand, authenticated users have access to additional features such as creating, viewing, and deleting posts. 
+![](./src/assets/Blogger_2.gif)
+Blogger is a web application that allows users to view blog posts without authentication. On the other hand, authenticated users have access to additional features such as creating, viewing, and deleting posts.
 
 ## Usage
 

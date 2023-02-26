@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const CreatePost = ({ isAuth }) => {
   const [title, setTitle] = useState("");
-  const [post, setPost] = useState("");
+  const [post, setPost] = useState();
 
   let navigate = useNavigate();
   const colRef = collection(db, "posts");
@@ -26,13 +26,13 @@ const CreatePost = ({ isAuth }) => {
   }, []);
 
   const style = {
-    container: `h-[90vh] w-full flex items-center justify-center max-w-[500px] mx-auto`,
-    content: `bg-emerald-600 p-4 w-full max-w-[400px] rounded-md`,
-    heading: `text-4xl mb-5 text-center`,
+    container: `h-[90vh] w-full flex items-center justify-center mx-auto `,
+    content: `bg-emerald-600 p-4 w-full max-w-[500px] rounded-md w-[80%] sm:w-[90%]`,
+    heading: `text-4xl mb-5 text-center sm:text-2xl`,
     form: `flex flex-col gap-5`,
     title: ``,
     titleInput: `w-full outline-none p-2 rounded-sm`,
-    postField: `w-full outline-none px-2 py-3 h-[150px] resize-none rounded-sm`,
+    postField: `w-full outline-none px-2 py-3 h-[150px] resize-none rounded-sm `,
     button: `bg-green-900 text-white p-2 rounded-sm`,
   };
   return (

@@ -6,3 +6,29 @@
   line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+}
+.textarea {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border: 2px solid red;
+  border-radius: 5px 0 0 5px;
+}
+.markdown {
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  border-radius: 0 5px 5px 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  overflow-y: scroll;
+}
+.button {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}

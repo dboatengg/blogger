@@ -3,7 +3,7 @@
 Blogger is a web application that allows users to view blog posts without authentication. On the other hand, authenticated users have access to additional features such as creating, viewing, and deleting posts..
 
 ## Demo
-Check out the live site [here](https://blogger-official.netlify.app/blog).
+Check out the live site [here](https://blogger-official.netlify.app/).
 
 ## Usage
 

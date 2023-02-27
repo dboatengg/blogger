@@ -4,10 +4,12 @@ import { db, auth } from "../firebase";
 import { Link } from "react-router-dom";
 import { SlTrash } from "react-icons/sl";
 import spinner from "../assets/spinner.gif";
+import useOffline from "../components/useOffline";
 
 const Blog = ({ isAuth }) => {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const { online, setOffline } = useOffline();
 
   const colRef = collection(db, "posts");
 
@@ -41,6 +43,8 @@ const Blog = ({ isAuth }) => {
 
   return (
     <div className={style.container}>
+      {!online ? setOffline : ""}
+
       <h1 className={style.title}>Blog</h1>
       {isLoading ? (
         <img className={style.spinner} src={spinner} alt="Loading..." />

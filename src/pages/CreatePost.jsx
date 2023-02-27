@@ -47,7 +47,7 @@ const CreatePost = ({ isAuth }) => {
                 type="text"
                 name="title"
                 required
-                placeholder="title"
+                placeholder="Title here..."
                 className={style.titleInput}
                 onChange={(e) => {
                   setTitle(e.target.value);
@@ -58,7 +58,7 @@ const CreatePost = ({ isAuth }) => {
               <p>Post</p>
               <textarea
                 name="post"
-                placeholder="Post..."
+                placeholder="Write your post in markdown format..."
                 required
                 className={style.postField}
                 onChange={(e) => {

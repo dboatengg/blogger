@@ -7,6 +7,7 @@ import CreatePost from "./pages/CreatePost";
 import Navbar from "./components/Navbar";
 import Blog from "./pages/Blog";
 import SinglePost from "./pages/SinglePost";
+import NotFound from "./pages/NotFound";
 import "./tailwind.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="blog" element={<Blog isAuth={isAuth} />} />
         <Route path="/posts/:postId" element={<SinglePost />} />
         <Route path="login" element={<Login setIsAuth={setIsAuth} />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

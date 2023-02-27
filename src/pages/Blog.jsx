@@ -9,6 +9,7 @@ import useOffline from "../components/useOffline";
 const Blog = ({ isAuth }) => {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  //useOffline custom hook
   const { online, setOffline } = useOffline();
 
   const colRef = collection(db, "posts");
@@ -43,6 +44,7 @@ const Blog = ({ isAuth }) => {
 
   return (
     <div className={style.container}>
+      {/* detect and notify users if they are offline: Posts cannot load offline */}
       {!online ? setOffline : ""}
 
       <h1 className={style.title}>Blog</h1>

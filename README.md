@@ -12,7 +12,7 @@ The application has the following pages:
 - **Home:** Represents the landing page. It displays a welcome message and some information about the app.
 - **Create Post:** Allows authenticated users to create new posts
 - **Blog:** Displays a list of all posts, allows authenticated users to delete their own posts
-- **Display Post:** Displays the full content of a post when a user clicks on the title of a post on the Blog page.
+- **Single Post:** Displays the full content of a post when a user clicks on the title of a post on the Blog page.
 - **Login:** Allows users to log in using their Google account
 
 ## Built With

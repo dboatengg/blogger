@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
-import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
+import {
+  getDocs,
+  collection,
+  deleteDoc,
+  doc,
+  query,
+  orderBy,
+} from "firebase/firestore";
 import { db, auth } from "../firebase";
 import { Link } from "react-router-dom";
 import { SlTrash } from "react-icons/sl";
@@ -9,14 +16,15 @@ import useOffline from "../components/useOffline";
 const Blog = ({ isAuth }) => {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
   //useOffline custom hook
   const { online, setOffline } = useOffline();
-
   const colRef = collection(db, "posts");
 
   useEffect(() => {
+    const q = query(colRef, orderBy("createdAt", "desc"));
     const getPosts = async () => {
-      const data = await getDocs(colRef);
+      const data = await getDocs(q);
       setPosts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       setIsLoading(false);
     };
@@ -24,7 +32,7 @@ const Blog = ({ isAuth }) => {
   }, []);
 
   const style = {
-    container: `h-[90vh] flex justify-start flex-col items-center w-[80%] max-w-[800px] mx-auto sm:w-[90%]`,
+    container: `flex justify-start flex-col items-center w-[80%] max-w-[800px] mx-auto sm:w-[90%]`,
     title: `text-4xl my-4`,
     posts: `flex flex-col gap-[10px]`,
     post: `px-2 py-4 flex flex-col gap-2`,
@@ -43,7 +51,7 @@ const Blog = ({ isAuth }) => {
   };
 
   return (
-    <div className={style.container}>
+    <div className={`${style.container} blog`}>
       {/* detect and notify users if they are offline: Posts cannot load offline */}
       {!online ? setOffline : ""}
 

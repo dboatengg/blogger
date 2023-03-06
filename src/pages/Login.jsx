@@ -12,19 +12,19 @@ const Login = ({ setIsAuth }) => {
     signInWithPopup(auth, provider).then((result) => {
       localStorage.setItem("isAuth", true);
       setIsAuth(true);
-      navigate("/");
+      navigate("/createpost");
     });
   };
 
   const style = {
-    container: `h-[90vh] flex items-center justify-center w-[90%] mx-auto`,
+    container: `flex items-center justify-center w-[90%] mx-auto`,
     content: `flex flex-col gap-5 items-center`,
-    button: `bg-green-200 transition duration-300 ease-in-out px-6 py-3 shadow-lg flex items-center gap-2 sm:px-4 sm:py-2 hover:shadow-md hover:bg-green-300`,
+    button: `bg-slate-400 px-6 py-3 shadow-lg flex items-center gap-2 sm:px-4 sm:py-2 hover:shadow-md`,
     title: `text-4xl max-w-[500px] mx-auto text-center w-[90%] sm:text-2xl`,
     googleIcon: `text-3xl sm:text-2xl`,
   };
   return (
-    <div className={style.container}>
+    <div className={`${style.container} login`}>
       <div className={style.content}>
         <h2 className={style.title}>Sign In With Google to continue</h2>
         <button className={style.button} onClick={signInWithGoogle}>

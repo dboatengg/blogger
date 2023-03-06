@@ -4,7 +4,7 @@ import { auth } from "../firebase";
 
 const Navbar = ({ isAuth, setIsAuth }) => {
   const style = {
-    nav: `bg-slate-400 w-full h-[10vh] flex items-center justify-center gap-5`,
+    nav: `bg-slate-400 w-full h-[70px] flex items-center justify-center gap-5`,
   };
 
   const signUserOut = () => {

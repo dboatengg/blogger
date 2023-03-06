@@ -26,6 +26,9 @@
 .createpost__block {
   display: flex;
 }
+.createpost__form {
+  margin-bottom: 50px;
+}
 .createpost__post {
   width: 100%;
   resize: none;

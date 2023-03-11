@@ -35,9 +35,8 @@ Feel free to submit a pull request if you find a bug or want to improve the app.
 
 ## Author
 
-- GitHub: [dboateng](https://www.github.com/dboatengg)
+- GitHub: [dboatengg](https://www.github.com/dboatengg)
 - Twitter: [alege_dev](https://www.twitter.com/alege_dev)
-- Instagram: [alege_dev](https://www.instagram.com/alege_dev)
 
 ## License
 
